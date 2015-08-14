@@ -24,7 +24,7 @@
 					<p class='contactchecks'>Comments/Questions:</p>
 					<textarea class='contactinputs' name='comments'></textarea>
 					<!-- <input type="submit" class='contactinputs submitbutton'> -->
-					<button type='submit' class='contactinputs submitbutton'></button>
+					<button type='submit' class='contactinputs submitbutton'>Submit</button>
 					</form>
 
 				</section>
@@ -83,11 +83,11 @@
 	      <script>
 options = {
             emailNotification: "jrutishauser@gmail.com",
-                //          emailConfirmationName: "InputName", //The form input we get the email from.
-                //          emailConfirmationFrom: "jrutishauser@gmail.com", //Email appears as sent by this address.
-                //          emailConfirmationSubject: "Thanks for signing up",
-                //          emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-                //          emailConfirmationBodyText: "You have been signed up!",
+                          emailConfirmationName: "emailaddress",
+						  emailConfirmationFrom: "jrutishauser@gmail.com", 
+						  emailConfirmationSubject: "Thanks for signing up",
+            			emailConfirmationBodyHTML:"<p>Request received we will contact you soon.</p>",
+                          emailConfirmationBodyText: "Request received we will contact you soon.",
             callback: function (err, val) {
 			  	if (!err){
 					alert('form posted');
