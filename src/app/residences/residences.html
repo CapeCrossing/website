@@ -23,7 +23,6 @@
 		<ul>
 				<li>100% fiber optic wireless internet</li>
 				<li>Spacious balconies or patios in all homes</li>
-				<li>Electric storm shutters on balconies</li>
 				<li>Impact glass windows</li>
 				<li>9' Ceilings, vaulted on second floor (of townhomes)</li>
 				<li>Fiberglass entry doors</li>
@@ -54,7 +53,6 @@
 					</ul>
 					<p>MASTER SUITE</p>
 					<ul>
-							<li>Direct balcony access</li>
 							<li>Air conditioned walk-in closets</li>
 							<li>Tiled shower with glass enclosure</li>
 							<li>Dual vanities with granite counter tops</li>
@@ -69,24 +67,75 @@
 	<img src='assets/images/site_plan_map.jpg' alt='Resort Layout' class='img-responsive'>
 	<h3 class='pricingbreak'>RENTAL MANAGEMENT PROGRAM COMING JANUARY 2016</h3>
 	<div class='row'>
-	<a ui-sref='contact'>
-		<div class='col-md-6 tile'>
+		<div class='tile col-md-6' ng-click='floorplans(1)'>
 			<img src='assets/images/3unit_townhome.jpg' class='' alt='click to view townhomes'/>
-				<h3>TOWNHOME PRICING & AVAILABILITY</h3>	
-				<p>Starting in the low 200's click here to contact us for quote</p>
+				<h3>TOWNHOME PRICING and AVAILABILITY</h3>	
+				<p>click here for floor plans</p>
 		</div><!--tile one-->
-		</a>
-		<a ui-sref='contact'>
-		<div class='col-md-6 tile'>
+		<div class='tile col-md-6' ng-click='floorplans(2)'>
 			<img src='assets/images/midrise_left.jpg' class='' alt='click to view midrise'/>
-				<h3>MIDRISE PRICING & AVAILABILITY</h3>	
-				<p>Starting in the low 200's click here to contact us for quote</p>
+				<h3>MIDRISE PRICING and AVAILABILITY</h3>	
+				<p>click here for floor plans</p>
 		</div><!--tile two-->
-		</a>
 	</div><!-- end of row for tiles-->
 	</section><!--residencescontainer-->
+		<div class='townhomeplan ng-hide col-md-12 plans' ng-show='plans === 1'>
+			<div class='col-md-6 col-md-offset-3'>
+					<h4>Townhome floor plan, click to view printable PDF</h4>
+			<img src='assets/images/townhomefloorplan.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+		</div>
+		<div class='midriseplan ng-hide col-md-10 plans col-md-offset-1' ng-show='plans === 2'>
+					<h4>Midrise floor plan, click to view printable PDF</h4>
+			<div class='row'>
+			<div class='col-md-4'>
+			<img src='assets/images/midrisefloorplanA.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+			<div class='col-md-4'>
+			<img src='assets/images/midrisefloorplanB.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+			<div class='col-md-4'>
+			<img src='assets/images/midrisefloorplanArev.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+			</div><!--row-->
+			<div class='row'>
+			<div class='col-md-4'>
+			<img src='assets/images/midrisefloorplanBrev.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+			<div class='col-md-4'>
+			<img src='assets/images/midrisefloorplanC.jpg' class='img-responsive'>
+			<div class='buttons'>
+				<button>Download as PDF</button>
+				<button>Contact for Pricing</button>
+			</div>
+			</div>
+			</div>
+
+		</div>
+		<div class='clearfix'>
+		</div>
 	<footer>
-		<div class='row firstthird'>
+		<div class='row firstthird col-md-12'>
 			<div class='col-md-2 col-md-offset-1'>
 			<img src='assets/images/tristar_logo.png' alt='TRISTAR Development Partners' class='img-responsive'>
 			<p>800–727–6845</p>

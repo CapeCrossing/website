@@ -14,9 +14,9 @@ angular.module("capecrossing")
         image: 'assets/images/kitchen_web.jpg'
       },
     ];
-	$scope.tab = 1;
-	$scope.showtab = function(input){
-		$scope.tab = input;	
+	$scope.plans = 0;
+	$scope.floorplans = function(input){
+		$scope.plans = input;	
 		return;
 	}
   });
