@@ -33,6 +33,11 @@ angular.module("capecrossing", ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngResourc
         templateUrl: 'app/contact/contact.html',
         controller: 'ContactCtrl'
       })
+      .state('team', {
+        url: '/team',
+        templateUrl: 'app/team/team.html',
+        controller: 'TeamCtrl'
+      })
     ;//end
     $urlRouterProvider.otherwise('/');
   })
