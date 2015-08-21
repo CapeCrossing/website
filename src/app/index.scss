@@ -692,10 +692,30 @@ footer {
 	}
 }
 .teampage {
-	width: 80%;
-	margin: 150px auto;
+	margin-top: 150px;
+	margin-bottom: 5em;
 	h1 {
 		text-align: center	
+	}
+	.teamlogo {
+		display: block;
+		margin: 0 auto;	
+	}
+	.teamsection {
+		margin-top: 2em;	
+	}
+	.teamsub {
+		font-weight: 800;
+		font-size: 1.25em;	
+	}
+	span {
+		display: block;	
+	}
+	.contacttitle {
+		margin-top: 4em;	
+	}
+	p:last-child {
+		margin-top: 2em;	
 	}
 }
 //injector
