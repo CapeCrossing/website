@@ -231,7 +231,15 @@ a {
 	}
 }
 	
-
+.menuword{
+	@media(max-width: 500px){
+	color: white;
+	text-align: right;
+	position: absolute;
+	top: -3px;
+	right: 6%;
+	}
+}
 .navbar-header {
   display: inline;
     @media(max-width: 1050px){
@@ -351,8 +359,11 @@ a {
   z-index: 2;
 }
 .groundbroken {
-	font-size: 5vw;
+	font-size: 3vw;
 	text-align: center;
+	@media(max-width: 500px){
+		font-size: 5.5vw;
+	}
 }
 .bodyh3 {
 	font-size: 2em;

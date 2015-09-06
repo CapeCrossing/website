@@ -82,11 +82,11 @@
 	<script src="http://src.fireform.org/fireform.min.js"></script>
 	      <script>
 options = {
-            emailNotification: "mcflynn@bellsouth.net",
+              			  emailNotification: "mcflynn@bellsouth.net",
                           emailConfirmationName: "emailaddress",
 						  emailConfirmationFrom: "mcflynn@bellsouth.net", 
 						  emailConfirmationSubject: "Thanks for signing up",
-            			emailConfirmationBodyHTML:"<p>Request received we will contact you shortly.</p>",
+            			  emailConfirmationBodyHTML:"<p>Request received we will contact you shortly.</p>",
                           emailConfirmationBodyText: "Request received we will contact you shortly.",
             callback: function (err, val) {
 			  	if (!err){
@@ -95,5 +95,5 @@ options = {
 				}     
 			}
         }
-        new Fireform('#MySelector', 'http://fireform.org/list/279/CapeCrossing');
+        new Fireform('#MySelector', 'http://fireform.org/list/279/CapeCrossing', options);
 		      </script>
