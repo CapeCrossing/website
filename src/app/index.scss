@@ -232,7 +232,9 @@ a {
 }
 	
 .menuword{
+  display: none;
 	@media(max-width: 500px){
+  display: block;
 	color: white;
 	text-align: right;
 	position: absolute;
